@@ -9,10 +9,13 @@ import { IoIosArrowForward } from 'react-icons/io';
 import { AiFillProduct } from 'react-icons/ai';
 import { FaCartShopping } from 'react-icons/fa6';
 import { PiTagSimpleFill } from 'react-icons/pi';
+import { useAppSelector } from '@/redux/reduxHooks';
 
 export default function NavbarAside() {
     const path = usePathname();
     const [itemActive, setItemActive] = useState<string>('');
+    const showMenu = useAppSelector((state) => state.adminMenu.aside);
+
     useEffect(() => {
         if (path) {
             const regex: RegExp = /(?<=\/admin\/)\w+/;
@@ -24,11 +27,12 @@ export default function NavbarAside() {
             }
         }
     }, []);
+
     return (
         <nav>
             <ul>
                 {/* Owerview */}
-                <li className="text-sm text-zinc-400 nav">
+                <li className="text-sm text-zinc-400 nav min-w-[15rem]">
                     <Link
                         href={'/admin'}
                         className={`flex gap-2 items-center p-4 relative ${
@@ -40,12 +44,20 @@ export default function NavbarAside() {
                                 path === '/admin' && 'text-blue-400'
                             }`}
                         />
-                        OVERVIEW
+                        <span
+                            className={`transition-all ${
+                                showMenu
+                                    ? 'opacity-100 visible'
+                                    : 'opacity-0 invisible group-hover:lg:opacity-100 group-hover:lg:visible'
+                            }`}
+                        >
+                            OVERVIEW
+                        </span>
                     </Link>
                 </li>
 
                 {/* Users */}
-                <li className="text-sm text-zinc-400 nav">
+                <li className="text-sm text-zinc-400 nav min-w-[15rem]">
                     <div
                         className={`flex gap-2 items-center p-4 relative cursor-pointer ${
                             path.startsWith('/admin/users') &&
@@ -63,18 +75,30 @@ export default function NavbarAside() {
                                 'text-blue-400'
                             }`}
                         />
-                        USERS
-                        <IoIosArrowForward
-                            className={`absolute right-2 top-1/2 -translate-y-1/2 transition-all ${
-                                itemActive === 'users'
-                                    ? 'rotate-90'
-                                    : 'rotate-0'
+                        <span
+                            className={`transition-all ${
+                                showMenu
+                                    ? 'opacity-100 visible'
+                                    : 'opacity-0 invisible group-hover:lg:opacity-100 group-hover:lg:visible'
                             }`}
-                        />
+                        >
+                            USERS
+                            <IoIosArrowForward
+                                className={`absolute right-2 top-1/2 -translate-y-1/2 transition-all ${
+                                    itemActive === 'users'
+                                        ? 'rotate-90'
+                                        : 'rotate-0'
+                                }`}
+                            />
+                        </span>
                     </div>
                     <div
                         className={`bg-zinc-50 transition-all h-fit overflow-hidden duration-1000 ${
                             itemActive === 'users' ? 'max-h-60' : 'max-h-0'
+                        } ${
+                            !showMenu &&
+                            itemActive === 'users' &&
+                            'opacity-0 invisible lg:max-h-0 group-hover:lg:max-h-60 group-hover:lg:opacity-100 group-hover:lg:visible'
                         }`}
                     >
                         <ul>
@@ -116,7 +140,7 @@ export default function NavbarAside() {
                 </li>
 
                 {/* Products */}
-                <li className="text-sm text-zinc-400 nav">
+                <li className="text-sm text-zinc-400 nav min-w-[15rem]">
                     <div
                         className={`flex gap-2 items-center p-4 relative cursor-pointer ${
                             path.startsWith('/admin/products') &&
@@ -134,18 +158,30 @@ export default function NavbarAside() {
                                 'text-blue-400'
                             }`}
                         />
-                        PRODUCTS
-                        <IoIosArrowForward
-                            className={`absolute right-2 top-1/2 -translate-y-1/2 transition-all ${
-                                itemActive === 'products'
-                                    ? 'rotate-90'
-                                    : 'rotate-0'
+                        <span
+                            className={`transition-all ${
+                                showMenu
+                                    ? 'opacity-100 visible'
+                                    : 'opacity-0 invisible group-hover:lg:opacity-100 group-hover:lg:visible'
                             }`}
-                        />
+                        >
+                            PRODUCTS
+                            <IoIosArrowForward
+                                className={`absolute right-2 top-1/2 -translate-y-1/2 transition-all ${
+                                    itemActive === 'products'
+                                        ? 'rotate-90'
+                                        : 'rotate-0'
+                                }`}
+                            />
+                        </span>
                     </div>
                     <div
                         className={`bg-zinc-50 transition-all h-fit overflow-hidden duration-1000 ${
                             itemActive === 'products' ? 'max-h-60' : 'max-h-0'
+                        } ${
+                            !showMenu &&
+                            itemActive === 'products' &&
+                            'opacity-0 invisible lg:max-h-0 group-hover:lg:max-h-60 group-hover:lg:opacity-100 group-hover:lg:visible'
                         }`}
                     >
                         <ul>
@@ -177,7 +213,7 @@ export default function NavbarAside() {
                 </li>
 
                 {/* Orders */}
-                <li className="text-sm text-zinc-400 nav">
+                <li className="text-sm text-zinc-400 nav min-w-[15rem]">
                     <div
                         className={`flex gap-2 items-center p-4 relative cursor-pointer ${
                             path.startsWith('/admin/orders') &&
@@ -195,18 +231,30 @@ export default function NavbarAside() {
                                 'text-blue-400'
                             }`}
                         />
-                        ORDERS
-                        <IoIosArrowForward
-                            className={`absolute right-2 top-1/2 -translate-y-1/2 transition-all ${
-                                itemActive === 'orders'
-                                    ? 'rotate-90'
-                                    : 'rotate-0'
+                        <span
+                            className={`transition-all ${
+                                showMenu
+                                    ? 'opacity-100 visible'
+                                    : 'opacity-0 invisible group-hover:lg:opacity-100 group-hover:lg:visible'
                             }`}
-                        />
+                        >
+                            ORDERS
+                            <IoIosArrowForward
+                                className={`absolute right-2 top-1/2 -translate-y-1/2 transition-all ${
+                                    itemActive === 'orders'
+                                        ? 'rotate-90'
+                                        : 'rotate-0'
+                                }`}
+                            />
+                        </span>
                     </div>
                     <div
                         className={`bg-zinc-50 transition-all h-fit overflow-hidden duration-1000 ${
                             itemActive === 'orders' ? 'max-h-60' : 'max-h-0'
+                        } ${
+                            !showMenu &&
+                            itemActive === 'orders' &&
+                            'opacity-0 invisible lg:max-h-0 group-hover:lg:max-h-60 group-hover:lg:opacity-100 group-hover:lg:visible'
                         }`}
                     >
                         <ul>
@@ -237,7 +285,7 @@ export default function NavbarAside() {
                 </li>
 
                 {/* Brands */}
-                <li className="text-sm text-zinc-400 nav">
+                <li className="text-sm text-zinc-400 nav min-w-[15rem]">
                     <div
                         className={`flex gap-2 items-center p-4 relative cursor-pointer ${
                             path.startsWith('/admin/brands') &&
@@ -255,18 +303,30 @@ export default function NavbarAside() {
                                 'text-blue-400'
                             }`}
                         />
-                        BRANDS
-                        <IoIosArrowForward
-                            className={`absolute right-2 top-1/2 -translate-y-1/2 transition-all ${
-                                itemActive === 'brands'
-                                    ? 'rotate-90'
-                                    : 'rotate-0'
+                        <span
+                            className={`transition-all ${
+                                showMenu
+                                    ? 'opacity-100 visible'
+                                    : 'opacity-0 invisible group-hover:lg:opacity-100 group-hover:lg:visible'
                             }`}
-                        />
+                        >
+                            BRANDS
+                            <IoIosArrowForward
+                                className={`absolute right-2 top-1/2 -translate-y-1/2 transition-all ${
+                                    itemActive === 'brands'
+                                        ? 'rotate-90'
+                                        : 'rotate-0'
+                                }`}
+                            />
+                        </span>
                     </div>
                     <div
                         className={`bg-zinc-50 transition-all h-fit overflow-hidden duration-1000 ${
                             itemActive === 'brands' ? 'max-h-60' : 'max-h-0'
+                        } ${
+                            !showMenu &&
+                            itemActive === 'brands' &&
+                            'opacity-0 invisible lg:max-h-0 group-hover:lg:max-h-60 group-hover:lg:opacity-100 group-hover:lg:visible'
                         }`}
                     >
                         <ul>

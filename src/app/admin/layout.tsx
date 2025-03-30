@@ -1,4 +1,7 @@
 import AdminAside from '@/Components/Templates/AdminTemplate/AdminAside/AdminAside';
+import AdminHeader from '@/Components/Templates/AdminTemplate/AdminAside/AdminHeader/AdminHeader';
+import AdminTemplate from '@/Components/Templates/AdminTemplate/AdminTemplate';
+import StoreProvider from '@/redux/StoreProvider';
 
 export default function AdminLayout({
     children,
@@ -7,10 +10,11 @@ export default function AdminLayout({
 }>) {
     return (
         <div>
-            <div className='flex'>
+            <StoreProvider>
                 <AdminAside />
-                {children}
-            </div>
+                <AdminHeader />
+                <AdminTemplate>{children}</AdminTemplate>
+            </StoreProvider>
         </div>
     );
 }
