@@ -208,6 +208,18 @@ export default function NavbarAside() {
                                     Add Product
                                 </Link>
                             </li>
+                            <li>
+                                <Link
+                                    className={`ps-16 py-4 block hover:text-zinc-600 transition-colors ${
+                                        path ===
+                                            '/admin/products/top-products' &&
+                                        'text-zinc-600 bg-gray-100'
+                                    }`}
+                                    href={'/admin/products/top-products'}
+                                >
+                                    Top Product
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </li>

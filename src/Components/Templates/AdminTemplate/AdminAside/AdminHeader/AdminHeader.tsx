@@ -9,7 +9,7 @@ export default function AdminHeader() {
 
     return (
         <div
-            className={`fixed w-full bg-white transition-all border-b border-gray-200 lg:border-b-0 pb-4 lg:pb-0 ${
+            className={`fixed w-full bg-white transition-all border-b border-gray-200 lg:border-b-0 pb-4 lg:pb-0 z-20 ${
                 showMenu ? 'lg:ps-[15rem]' : 'lg:ps-16'
             }`}
         >

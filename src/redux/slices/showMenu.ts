@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
     profileMenu: false,
     notifMenu: false,
-    aside: true,
+    aside: false,
 };
 
 const showMenu = createSlice({

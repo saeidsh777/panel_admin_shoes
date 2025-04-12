@@ -13,14 +13,14 @@ export default function ReportCard({
     type: number;
 }) {
     return (
-        <div className="flex items-center justify-between p-6 bg-white shadow-[0_0_5px_2px_#eee] rounded-lg">
+        <div className="flex items-center justify-between p-5 box">
             <div>
-                <p className="text-2xl font-semibold text-zinc-600">
-                   {type === 4 && '$'} {value.toLocaleString()}
+                <p className="font-semibold text-zinc-600 md:text-xl">
+                    {type === 4 && '$'} {value.toLocaleString()}
                 </p>
                 <p className="text-zinc-400">{title}</p>
             </div>
-            <div className="w-12 h-12 flex justify-center items-center bg-blue-400 text-white text-3xl rounded-lg">
+            <div className="w-12 h-12 flex justify-center items-center bg-blue-400 text-white text-xl md:text-3xl rounded-lg">
                 {type === 1 && <IoPersonAdd />}
                 {type === 2 && <FaUserClock />}
                 {type === 3 && <BsBoxSeamFill />}
