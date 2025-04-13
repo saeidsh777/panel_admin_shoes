@@ -17,7 +17,7 @@ export default function ProductsTable() {
                 <tr className="[&>td]:py-6 [&>td]:pe-8 border-b border-zinc-100">
                     <td className="font-semibold">
                         <Link
-                            href={'/products/productName/productModel'}
+                            href={'/admin/products/productName/productModel'}
                             className="flex items-center gap-2"
                         >
                             <div className="w-12 h-12 rounded-lg overflow-hidden">
@@ -39,7 +39,7 @@ export default function ProductsTable() {
                 <tr className="[&>td]:py-6 [&>td]:pe-8 border-b border-zinc-100">
                     <td className="font-semibold">
                         <Link
-                            href={'/products/productName/productModel'}
+                            href={'/admin/products/productName/productModel'}
                             className="flex items-center gap-2"
                         >
                             <div className="w-12 h-12 rounded-lg overflow-hidden">
@@ -61,7 +61,7 @@ export default function ProductsTable() {
                 <tr className="[&>td]:py-6 [&>td]:pe-8 border-b border-zinc-100">
                     <td className="font-semibold">
                         <Link
-                            href={'/products/productName/productModel'}
+                            href={'/admin/products/productName/productModel'}
                             className="flex items-center gap-2"
                         >
                             <div className="w-12 h-12 rounded-lg overflow-hidden">
@@ -83,7 +83,7 @@ export default function ProductsTable() {
                 <tr className="[&>td]:py-6 [&>td]:pe-8 border-b border-zinc-100">
                     <td className="font-semibold">
                         <Link
-                            href={'/products/productName/productModel'}
+                            href={'/admin/products/productName/productModel'}
                             className="flex items-center gap-2"
                         >
                             <div className="w-12 h-12 rounded-lg overflow-hidden">
@@ -105,7 +105,7 @@ export default function ProductsTable() {
                 <tr className="[&>td]:py-6 [&>td]:pe-8 border-b border-zinc-100">
                     <td className="font-semibold">
                         <Link
-                            href={'/products/productName/productModel'}
+                            href={'/admin/products/productName/productModel'}
                             className="flex items-center gap-2"
                         >
                             <div className="w-12 h-12 rounded-lg overflow-hidden">

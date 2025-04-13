@@ -43,6 +43,56 @@ export default function UsersTable() {
                     <td>{new Date().toLocaleDateString()}</td>
                     <Actions id={'1'} />
                 </tr>
+                <tr className="[&>td]:py-6 [&>td]:pe-6 border-b border-zinc-100">
+                    <td className="font-semibold">
+                        <Link
+                            className="flex items-center gap-2 font-semibold"
+                            href={'/admin/users/profile/userId'}
+                        >
+                            <div className="w-12 h-12 rounded-lg overflow-hidden bg-zinc-200">
+                                <Image
+                                    className="size-full"
+                                    src={'/images/products/p1.jpg'}
+                                    width={500}
+                                    height={500}
+                                    alt="product image"
+                                />
+                            </div>
+                            Saeid Shojaei
+                        </Link>
+                    </td>
+                    <td>Saeid@gmail.com</td>
+                    <td>09353054742</td>
+                    <td>$650</td>
+                    <td>Active</td>
+                    <td>{new Date().toLocaleDateString()}</td>
+                    <Actions id={'1'} />
+                </tr>
+                <tr className="[&>td]:py-6 [&>td]:pe-6 border-b border-zinc-100">
+                    <td className="font-semibold">
+                        <Link
+                            className="flex items-center gap-2 font-semibold"
+                            href={'/admin/users/profile/userId'}
+                        >
+                            <div className="w-12 h-12 rounded-lg overflow-hidden bg-zinc-200">
+                                <Image
+                                    className="size-full"
+                                    src={'/images/products/p1.jpg'}
+                                    width={500}
+                                    height={500}
+                                    alt="product image"
+                                />
+                            </div>
+                            Saeid Shojaei
+                        </Link>
+                    </td>
+                    <td>Saeid@gmail.com</td>
+                    <td>09353054742</td>
+                    <td>$650</td>
+                    <td>Active</td>
+                    <td>{new Date().toLocaleDateString()}</td>
+                    <Actions id={'1'} />
+                </tr>
             </tbody>
         </table>
     );

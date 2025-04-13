@@ -39,13 +39,19 @@ export default function BreadCrumbPanel({ title }: { title: string }) {
                     return (
                         <React.Fragment key={index}>
                             {pathNames.length == index + 1 ? (
-                                <span className=" capitalize">{item}</span>
+                                <span className=" capitalize">
+                                    {item.includes('-')
+                                        ? item.split('-').join(' ').toString()
+                                        : item}
+                                </span>
                             ) : (
                                 <Link
                                     className="text-blue-400 capitalize"
                                     href={linkGenerator(index)}
                                 >
-                                    {item}
+                                    {item.includes('-')
+                                        ? item.split('-').join(' ').toString()
+                                        : item}
                                 </Link>
                             )}
 
@@ -60,7 +66,7 @@ export default function BreadCrumbPanel({ title }: { title: string }) {
             </div>
         );
     };
-    
+
     return (
         <div>
             <h3 className="font-semibold text-2xl text-zinc-600">{title}</h3>

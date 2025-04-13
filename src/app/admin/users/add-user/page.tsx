@@ -1,7 +1,6 @@
-import React from 'react'
+import AddUserTemplate from '@/Components/Templates/AdminTemplate/AddUserTemplate/AddUserTemplate';
+import React from 'react';
 
 export default function AddUserPage() {
-  return (
-    <div>AddUserPage</div>
-  )
+    return <AddUserTemplate />;
 }

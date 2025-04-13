@@ -1,7 +1,13 @@
 import Link from 'next/link';
 import React from 'react';
 import { MdRemoveRedEye } from 'react-icons/md';
-const Status = ({ title, type }: { title: string; type: 1 | 2 | 3 | 4 }) => {
+export const Status = ({ type }: { type: 1 | 2 | 3 | 4 }) => {
+    const title = {
+        1: 'DELAYED',
+        2: 'COMPLETED',
+        3: 'ON HOLD',
+        4: 'CANCELLED',
+    };
     const color = {
         1: 'bg-blue-400 text-white',
         2: 'bg-green-500 text-white',
@@ -10,7 +16,7 @@ const Status = ({ title, type }: { title: string; type: 1 | 2 | 3 | 4 }) => {
     };
     return (
         <span className={`${color[type]} px-4 py-0.5 rounded-lg text-xs`}>
-            {title}
+            {title[type]}
         </span>
     );
 };
@@ -39,7 +45,7 @@ export default function OrderTable() {
                     <td>Oct 20, 2018</td>
                     <td>$230</td>
                     <td>
-                        <Status title="Delayed" type={1} />
+                        <Status type={1} />
                     </td>
                     <td className="cursor-pointer">
                         <Link href={'/'}>
@@ -56,7 +62,7 @@ export default function OrderTable() {
                     <td>Oct 20, 2018</td>
                     <td>$230</td>
                     <td>
-                        <Status title="Completed" type={2} />
+                        <Status type={2} />
                     </td>
                     <td className="cursor-pointer">
                         <Link href={'/'}>
@@ -73,7 +79,7 @@ export default function OrderTable() {
                     <td>Oct 20, 2018</td>
                     <td>$230</td>
                     <td>
-                        <Status title="On Hold" type={3} />
+                        <Status type={3} />
                     </td>
                     <td className="cursor-pointer">
                         <Link href={'/'}>
@@ -90,7 +96,7 @@ export default function OrderTable() {
                     <td>Oct 20, 2018</td>
                     <td>$230</td>
                     <td>
-                        <Status title="Cancelled" type={4} />
+                        <Status type={4} />
                     </td>
                     <td className="cursor-pointer">
                         <Link href={'/'}>

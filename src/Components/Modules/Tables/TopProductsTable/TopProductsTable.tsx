@@ -15,7 +15,7 @@ export default function TopProductsTable() {
             <tbody className="text-zinc-500 ">
                 <tr className="[&>td]:py-6 [&>td]:pe-8 border-b border-zinc-100">
                     <td className="font-semibold">
-                        <Link href={'/products/productName/productModel'}>
+                        <Link href={'/admin/products/productName/productModel'}>
                             Adidas
                         </Link>
                     </td>
@@ -25,7 +25,7 @@ export default function TopProductsTable() {
                 </tr>
                 <tr className="[&>td]:py-6 [&>td]:pe-8 border-b border-zinc-100">
                     <td className="font-semibold ">
-                        <Link href={'/products/productName/productModel'}>
+                        <Link href={'/admin/products/productName/productModel'}>
                             Adidas
                         </Link>
                     </td>
@@ -35,7 +35,7 @@ export default function TopProductsTable() {
                 </tr>
                 <tr className="[&>td]:py-6 [&>td]:pe-8 border-b border-zinc-100">
                     <td className="font-semibold">
-                        <Link href={'/products/productName/productModel'}>
+                        <Link href={'/admin/products/productName/productModel'}>
                             Adidas
                         </Link>
                     </td>
@@ -45,7 +45,7 @@ export default function TopProductsTable() {
                 </tr>
                 <tr className="[&>td]:py-6 [&>td]:pe-8 border-b border-zinc-100">
                     <td className="font-semibold">
-                        <Link href={'/products/productName/productModel'}>
+                        <Link href={'/admin/products/productName/productModel'}>
                             Adidas
                         </Link>
                     </td>
@@ -55,7 +55,7 @@ export default function TopProductsTable() {
                 </tr>
                 <tr className="[&>td]:py-6 [&>td]:pe-8 border-b border-zinc-100">
                     <td className="font-semibold">
-                        <Link href={'/products/productName/productModel'}>
+                        <Link href={'/admin/products/productName/productModel'}>
                             Adidas
                         </Link>
                     </td>
