@@ -66,7 +66,7 @@ export default function AddUserTemplate() {
                         </div>
                     </div>
                 </div>
-                <div className="lg:col-span-3 box">
+                <div className="lg:col-span-3 box overflow-x-hidden">
                     <div className="p-6">
                         <div className="pb-6 flex justify-between items-center">
                             <h2 className="text-lg font-semibold text-zinc-500">

@@ -92,7 +92,7 @@ export default function EditablePhoto() {
 
             {!isImage && (
                 <select
-                    className="bg-blue-200 text-sm pt-4 pb-1 px-2 absolute w-full border border-zinc-200 rounded-xl -translate-y-8 z-0 transition-all group-hover:-translate-y-4 group-hover:bg-zinc-50"
+                    className="bg-blue-200 text-sm text-zinc-500 pt-4 pb-1 px-2 absolute w-full border border-zinc-200 rounded-xl -translate-y-8 z-0 transition-all group-hover:-translate-y-4 group-hover:bg-zinc-50"
                     onChange={defaultImgChanger}
                 >
                     <option value="-1">Select ...</option>

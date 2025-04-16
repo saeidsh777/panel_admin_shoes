@@ -1,5 +1,5 @@
-import React from 'react';
+import ProductsTemplate from '@/Components/Templates/AdminTemplate/ProductsTemplate/ProductsTemplate';
 
 export default function ProductsPage() {
-    return <div>ProductsP</div>;
+    return <ProductsTemplate/>;
 }

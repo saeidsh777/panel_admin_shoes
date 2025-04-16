@@ -6,8 +6,8 @@ import React from 'react';
 export default function UsersTable() {
     return (
         <table className="w-full whitespace-nowrap text-xs md:text-base">
-            <thead className="sticky top-0 left-0 w-full bg-white outline-1 outline-zinc-200 z-10">
-                <tr className="text-zinc-500 pb-4 text-left ">
+            <thead className="sticky top-0 left-0 w-full  bg-white outline-1 outline-zinc-200 z-10">
+                <tr className="text-zinc-500 pb-4 text-left [&>th]:pe-6">
                     <th>Profile</th>
                     <th>Email</th>
                     <th>Phone</th>
