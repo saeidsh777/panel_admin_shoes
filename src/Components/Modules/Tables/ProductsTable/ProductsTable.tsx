@@ -118,7 +118,7 @@ export default function ProductsTable() {
     return (
         <table className="w-full whitespace-nowrap text-xs md:text-base">
             <thead className="sticky top-0 left-0 w-full bg-white outline-1 outline-zinc-200">
-                <tr className="text-zinc-400 pb-4 text-left [&>th]:pe-8 ">
+                <tr className="text-zinc-400 pb-4 text-left [&>th]:pe-8">
                     <th>Name</th>
                     <th>Brand</th>
                     <th>Sizes</th>

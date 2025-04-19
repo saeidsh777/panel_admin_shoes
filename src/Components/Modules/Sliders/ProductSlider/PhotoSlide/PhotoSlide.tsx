@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function PhotoSlide({image}:{image:string}) {
     return (
-        <div className="bg-zinc-100 overflow-hidden rounded-2xl aspect-[1/1.1]">
+        <div className="bg-zinc-100 overflow-hidden rounded-2xl aspect-[1/1.1] max-h-[20rem] mx-auto">
             <Image
                 className="size-full"
                 src={image}

@@ -40,7 +40,6 @@
 .slick-next {
     right: -10px !important;
 }
-
 .small-slider .slick-slide.slick-active.slick-current .bg-zinc-100 {
     @apply border border-zinc-300;
 }

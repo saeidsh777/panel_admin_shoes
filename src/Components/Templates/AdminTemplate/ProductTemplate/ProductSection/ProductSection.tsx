@@ -1,5 +1,6 @@
 import ProductSlider from '@/Components/Modules/Sliders/ProductSlider/ProductSlider';
 import React from 'react';
+import ProductDetails from './ProductDetails/ProductDetails';
 
 export default function ProductSection() {
     return (
@@ -10,11 +11,13 @@ export default function ProductSection() {
                 </h3>
             </div>
             <div className="p-6">
-                <div className="grid lg:grid-cols-7 gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-7 gap-8">
                     <div className="lg:col-span-2">
                         <ProductSlider />
                     </div>
-                    <div>sfd</div>
+                    <div className='lg:col-span-5'>
+                        <ProductDetails />
+                    </div>
                 </div>
             </div>
         </section>
