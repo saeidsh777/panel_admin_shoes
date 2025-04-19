@@ -22,7 +22,7 @@ export default function UsersTable() {
                     <td className="font-semibold">
                         <Link
                             className="flex items-center gap-2 font-semibold"
-                            href={'/admin/users/profile/userId'}
+                            href={'/admin/profile?userId=jsjdnj35k3j45'}
                         >
                             <div className="w-12 h-12 rounded-lg overflow-hidden bg-zinc-200">
                                 <Image
@@ -47,7 +47,7 @@ export default function UsersTable() {
                     <td className="font-semibold">
                         <Link
                             className="flex items-center gap-2 font-semibold"
-                            href={'/admin/users/profile/userId'}
+                            href={'/admin/profile?userId=jsjdnj35k3j45'}
                         >
                             <div className="w-12 h-12 rounded-lg overflow-hidden bg-zinc-200">
                                 <Image
@@ -72,7 +72,7 @@ export default function UsersTable() {
                     <td className="font-semibold">
                         <Link
                             className="flex items-center gap-2 font-semibold"
-                            href={'/admin/users/profile/userId'}
+                            href={'/admin/profile?userId=jsjdnj35k3j45'}
                         >
                             <div className="w-12 h-12 rounded-lg overflow-hidden bg-zinc-200">
                                 <Image

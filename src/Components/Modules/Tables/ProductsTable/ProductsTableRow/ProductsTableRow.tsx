@@ -22,7 +22,7 @@ export default function ProductsTableRow({ product }: {product:ProductType}) {
         >
             <td className="font-semibold">
                 <Link
-                    href={`/admin/products/product/${product.slug}`}
+                    href={`/admin/product/${product.slug}`}
                     className="flex items-center gap-2"
                 >
                     <div className="w-12 h-12 rounded-lg overflow-hidden">
