@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 
 const roboto = Roboto({
     subsets: ['latin'],
+    display: 'swap',
+    variable: '--font-roboto',
 });
 
 export default function RootLayout({
@@ -20,7 +22,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body cz-shortcut-listen="true" className={roboto.className}>
+            <body cz-shortcut-listen="true" className={`${roboto.className} ${roboto.variable}`}>
                 {children}
             </body>
         </html>

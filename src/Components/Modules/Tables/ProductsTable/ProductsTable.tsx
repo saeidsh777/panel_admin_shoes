@@ -10,10 +10,6 @@ export interface ProductType {
         slug: string;
         brandID: string;
     };
-    model: {
-        id: string;
-        name: string;
-    };
     sizes: {
         id: string;
         size: {
@@ -46,10 +42,6 @@ const allProducts: ProductType[] = [
             name: 'Adidas',
             slug: 'adidas',
             brandID: 'kjksd5s4ds',
-        },
-        model: {
-            id: 'jkjrubew76348dbu347',
-            name: 'K512',
         },
         sizes: [
             {

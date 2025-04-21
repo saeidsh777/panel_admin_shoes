@@ -1,7 +1,6 @@
-import React from 'react'
+import NewProductTemplate from '@/Components/Templates/AdminTemplate/NewProductTemplate/NewProductTemplate';
+import React from 'react';
 
 export default function AddProductPage() {
-  return (
-    <div>add product</div>
-  )
+    return <NewProductTemplate />;
 }

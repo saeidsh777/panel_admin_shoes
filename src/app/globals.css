@@ -1,7 +1,12 @@
 @import 'tailwindcss';
 
-::-webkit-scrollbar {
-    display: none;
+@layer base {
+    option {
+        font-family: sans-serif !important;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 @utility btn_global {
