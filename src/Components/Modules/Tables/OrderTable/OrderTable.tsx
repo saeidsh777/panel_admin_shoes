@@ -39,7 +39,7 @@ export default function OrderTable() {
                 <tr className="[&>td]:py-6 [&>td]:pe-8">
                     <td className="font-semibold">2042</td>
                     <td>
-                        <Link href={'/'}>Saeid@gmaisdsdfdf.com</Link>
+                        <Link href={'/admin/profile?userId=dsjbdksdk'}>Saeid@gmaisdsdfdf.com</Link>
                     </td>
                     <td>1 Unit</td>
                     <td>Oct 20, 2018</td>
@@ -48,7 +48,7 @@ export default function OrderTable() {
                         <Status type={1} />
                     </td>
                     <td className="cursor-pointer">
-                        <Link href={'/'}>
+                        <Link href={'/admin/order/orderID'}>
                             <MdRemoveRedEye />
                         </Link>
                     </td>

@@ -68,7 +68,7 @@ export default function ProductForm() {
                                         type="text"
                                     />
                                 </div>
-                                <button className="ms-4 p-2 rounded-md border border-zinc-200 bg-white cursor-pointer hover:shadow-md">
+                                <button type='button' className="ms-4 p-2 rounded-md border border-zinc-200 bg-white cursor-pointer hover:shadow-md">
                                     New Color
                                 </button>
                             </div>

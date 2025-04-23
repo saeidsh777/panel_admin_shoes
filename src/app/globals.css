@@ -9,16 +9,16 @@
     }
 }
 
-@utility btn_global {
-    @apply py-2 px-4 bg-blue-400 text-white hover:bg-blue-500 rounded-xl cursor-pointer;
-}
-
-@utility box {
-    @apply bg-white shadow-[0_0_5px_2px_#f4f4f4] border border-zinc-200 rounded-xl;
-}
-
-@utility link_active {
+@layer components {
+    .btn_global {
+        @apply py-2 px-4 bg-blue-400 text-white hover:bg-blue-500 rounded-xl cursor-pointer;
+    }
+    .box {
+        @apply bg-white shadow-[0_0_5px_2px_#f4f4f4] border border-zinc-200 rounded-xl;
+    }
+    .link_active {
     @apply after:absolute after:content-[""] after:left-1 after:top-1/2 after:-translate-y-1/2 after:w-[5px] after:h-3/4 after:bg-blue-400 after:rounded-md;
+}
 }
 
 /* container */

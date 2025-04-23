@@ -278,18 +278,7 @@ export default function NavbarAside() {
                                     }`}
                                     href={'/admin/orders'}
                                 >
-                                    New Orders
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    className={`ps-16 py-4 block hover:text-zinc-600 transition-colors ${
-                                        path === '/admin/orders/history' &&
-                                        'text-zinc-600 bg-gray-100'
-                                    }`}
-                                    href={'/admin/orders/history'}
-                                >
-                                    Order History
+                                    Orders
                                 </Link>
                             </li>
                         </ul>
@@ -351,17 +340,6 @@ export default function NavbarAside() {
                                     href={'/admin/brands'}
                                 >
                                     Brands
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    className={`ps-16 py-4 block hover:text-zinc-600 transition-colors ${
-                                        path === '/admin/brands/add-brand' &&
-                                        'text-zinc-600 bg-gray-100'
-                                    }`}
-                                    href={'/admin/brands/add-brand'}
-                                >
-                                    Add Brand
                                 </Link>
                             </li>
                         </ul>
