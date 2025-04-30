@@ -1,8 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
 import adminShowMenuReducer from './slices/showMenu';
+import modalReducer from './slices/showModal';
 
 export const store = configureStore({
-    reducer: { adminMenu: adminShowMenuReducer },
+    reducer: { adminMenu: adminShowMenuReducer, modal: modalReducer },
 });
 
 export type AppStore = typeof store;

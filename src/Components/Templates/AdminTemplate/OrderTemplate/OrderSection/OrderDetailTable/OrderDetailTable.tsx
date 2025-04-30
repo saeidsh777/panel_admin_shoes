@@ -45,8 +45,11 @@ export default function OrderDetailTable() {
                                     Adidas
                                 </Link>
                             </td>
-                            <td >
-                                <Link href={'/admin/brands/brandName'} className="flex items-center gap-2">
+                            <td>
+                                <Link
+                                    href={'/admin/brands/brandName'}
+                                    className="flex items-center gap-2"
+                                >
                                     <Image
                                         src={'/images/products/p1.jpg'}
                                         width={500}
@@ -65,7 +68,6 @@ export default function OrderDetailTable() {
                             <td>2</td>
                             <td>$72</td>
                         </tr>
-                        
                     </tbody>
                     <tfoot className="text-zinc-500 font-semibold ">
                         <tr className="[&>td]:py-2 [&>td]:pe-8 bg-zinc-50">

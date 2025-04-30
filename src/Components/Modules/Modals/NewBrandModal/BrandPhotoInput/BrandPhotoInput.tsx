@@ -1,10 +1,10 @@
-'use client';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { IoIosClose } from 'react-icons/io';
 import { MdOutlineModeEdit } from 'react-icons/md';
 const defaultImage = '/images/products/upload-thumb-preview.jpg';
-export default function ProductPhotoInput({name}:{name:string}) {
+
+export default function BrandPhotoInput() {
     const [image, setImage] = useState(defaultImage);
     const [imageFile, setImageFile] = useState<File | null>(null);
     const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -22,9 +22,10 @@ export default function ProductPhotoInput({name}:{name:string}) {
         setImage(defaultImage);
         setImageFile(null);
     };
+
     return (
-        <div className="border border-zinc-100 rounded-2xl p-1">
-            <div className="w-20 h-20 bg-zinc-100 rounded-2xl flex justify-center overflow-hidden relative">
+        <div>
+            <div className="w-24 h-24 bg-white rounded-2xl flex justify-center overflow-hidden relative outline-1 outline-zinc-200 outline-offset-4">
                 <Image
                     src={image}
                     width={500}
@@ -32,12 +33,12 @@ export default function ProductPhotoInput({name}:{name:string}) {
                     className="size-full object-cover"
                     alt="Upload Preview"
                 />
-                <label className="absolute top-1 right-1 z-1" htmlFor={name}>
+                <label className="absolute top-1 right-1 z-1" htmlFor={'image'}>
                     <span className="p-1 bg-white text-zinc-500 text-2xl w-6 h-6 cursor-pointer shadow-md hover:shadow-xl flex justify-center items-center rounded-md">
                         <MdOutlineModeEdit />
                     </span>
                     <input
-                        id={name}
+                        id={'image'}
                         type="file"
                         hidden
                         onChange={handleImageChange}

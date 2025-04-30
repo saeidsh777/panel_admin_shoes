@@ -1,3 +1,4 @@
+import ModalTemplate from '@/Components/Modules/Modals/ModalTemplate';
 import AdminAside from '@/Components/Templates/AdminTemplate/AdminAside/AdminAside';
 import AdminHeader from '@/Components/Templates/AdminTemplate/AdminAside/AdminHeader/AdminHeader';
 import AdminTemplate from '@/Components/Templates/AdminTemplate/AdminTemplate';
@@ -14,6 +15,7 @@ export default function AdminLayout({
                 <AdminAside />
                 <AdminHeader />
                 <AdminTemplate>{children}</AdminTemplate>
+                <ModalTemplate />
             </StoreProvider>
         </div>
     );
